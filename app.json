@@ -1,0 +1,12 @@
+{
+    "name": "Discord template Bot",
+    "description": "A Discord bot.",
+    "repository": "https://github.com/shamilhabeebnelli/discord-template",
+    "logo": "https://avatars.githubusercontent.com/u/72779328?s=96&v=4",
+    "keywords": ["discord", "bot", "discord.py"],
+    "env": {
+        "ENV 1": {
+          "description": "repeat the step for adding more variables" 
+        }
+      }
+}
