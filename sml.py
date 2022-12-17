@@ -21,7 +21,7 @@ async def on_member_remove(self, member):
     
 @demo.event
 async def on_message(self, message):
-    print(f"{message.author} just sent a message: {message.content}."
+    print(f"{message.author} just sent a message: {message.content}.")
     
 @demo.command(name='test')
 async def test(clienT, arg):  # test fn
