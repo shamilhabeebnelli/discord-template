@@ -1,6 +1,5 @@
 import discord
-
-BOT_TOKEN = '**' # your discord token here
+from conf import BOT_TOKEN
 XX = ('start', 'help', 'about') # list of words for which bot should respond
 
 
