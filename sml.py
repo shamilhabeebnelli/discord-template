@@ -6,6 +6,23 @@ from conf import BOT_TOKEN as TOKEN
 from conf import CMD_PRE as CMD_PREFIX
 demo = commands.Bot(command_prefix=CMD_PREFIX) 
 
+
+@demo.event
+async def on_ready():
+    print('Build Succeed ✅')
+    
+@demo.event
+async def on_member_join(clienT, arg)
+    print("someone joined.")
+
+@demo.event
+async def on_member_remove(self, member):
+    print("someone left server.")
+    
+@demo.event
+async def on_message(self, message):
+    print(f"{message.author} just sent a message: {message.content}."
+    
 @demo.command(name='test')
 async def test(clienT, arg):  # test fn
     await clienT.send(arg)  
