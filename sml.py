@@ -15,6 +15,18 @@ async def wave(clienT):
     usr = clienT.message.author  
     await clienT.send('Hey, {}!\n\nHows the day Going!?'.format(usr))  
 
+@demo.command(name='ping') #!ping "pong"
+async def ping(clienT):
+    await clienT.channel.send("pong")
+    
+@demo.command(name='print') #!print
+async def print(clienT, *cmd):
+    txt = ""
+    for elmnt in cmd:
+                  txt = txt + " " + elmnt
+    await clienT.channel.send(txt)     
+    
+      
 @demo.command()
 async def img(clienT, argu): 
     response = requests.get('https://some-random-api.ml/img/{}'.format(argu)) 
