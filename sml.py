@@ -6,12 +6,12 @@ from conf import BOT_TOKEN as TOKEN
 from conf import CMD_PRE as CMD_PREFIX
 demo = commands.Bot(command_prefix=CMD_PREFIX) 
 
-@demo.command()
+@demo.command(name='test')
 async def test(clienT, arg):  # test fn
     await clienT.send(arg)  
     
-@demo.command()
-async def wave(clienT):  
+@demo.command(name='start')
+async def start(clienT):  
     usr = clienT.message.author  
     await clienT.send('Hey, {}!\n\nHows the day Going!?'.format(usr))  
 
@@ -27,7 +27,7 @@ async def print(clienT, *cmd):
     await clienT.channel.send(txt)     
     
       
-@demo.command()
+@demo.command(name='img')
 async def img(clienT, argu): 
     response = requests.get('https://some-random-api.ml/img/{}'.format(argu)) 
     jsoon = json.loads(response.text)  
