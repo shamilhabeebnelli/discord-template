@@ -12,7 +12,7 @@ async def on_ready():
     print('Build Succeed ✅')
     
 @demo.event
-async def on_member_join(clienT, arg)
+async def on_member_join(clienT, arg):
     print("someone joined.")
 
 @demo.event
